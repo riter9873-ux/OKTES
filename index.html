@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UltraPro SaaS</title>
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Particles CDN -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+</head>
+<body>
+
+<div id="particles"></div>
+
+<!-- LOGIN SECTION -->
+<div id="loginSection" class="center-box">
+<h1>UltraPro</h1>
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Password">
+<button id="loginBtn">Login</button>
+</div>
+
+<!-- DASHBOARD SECTION -->
+<div id="dashboard" class="hidden">
+
+<div class="sidebar" id="sidebar">
+<button id="toggleSidebar">☰</button>
+<h3>UltraPro</h3>
+
+<button class="navBtn" data-page="home">Home</button>
+<button class="navBtn" data-page="analytics">Analytics</button>
+
+<button id="logoutBtn" class="logout">Logout</button>
+</div>
+
+<div class="main">
+
+<div id="home" class="page">
+<h2>Welcome Dashboard</h2>
+<p>Premium Access Granted</p>
+</div>
+
+<div id="analytics" class="page hidden">
+<canvas id="myChart"></canvas>
+</div>
+
+</div>
+</div>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>
