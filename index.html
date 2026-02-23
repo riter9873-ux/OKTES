@@ -4,74 +4,62 @@
 <meta charset="UTF-8">
 <title>UltraPro</title>
 <link rel="stylesheet" href="css/style.css">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- AUTH SCREEN -->
-<section id="authScreen">
-<div class="auth-card">
-
-<h2>UltraPro Access</h2>
-
-<div class="tabs">
-<button id="tabLogin" class="tab active">Sign In</button>
-<button id="tabSignup" class="tab">Create Account</button>
+<!-- TOP BAR -->
+<div class="topbar">
+<div class="logo">UltraPro</div>
 </div>
+
+<!-- AUTH SECTION -->
+<section id="authSection">
+
+<div class="auth-container">
+
+<div class="left">
+<h1>UltraPro</h1>
+<p>Connect professionally and access your dashboard.</p>
+</div>
+
+<div class="right">
+
+<div class="card">
 
 <div id="messageBox" class="message hidden"></div>
 
-<!-- LOGIN -->
-<div id="loginForm" class="form active">
-<input type="email" id="loginEmail" placeholder="Email address">
-<input type="password" id="loginPassword" placeholder="Password">
-<button id="loginBtn">Sign In</button>
-<p class="link" id="forgotBtn">Forgot password?</p>
-</div>
+<input type="email" id="email" placeholder="Email address">
+<input type="password" id="password" placeholder="Password">
 
-<!-- SIGNUP -->
-<div id="signupForm" class="form">
-<input type="email" id="signupEmail" placeholder="Email address">
-<input type="password" id="signupPassword" placeholder="Password (min 6 characters)">
-<button id="signupBtn">Create Account</button>
+<button id="loginBtn" class="btn-primary">Log In</button>
+
+<p class="forgot" id="forgotBtn">Forgotten password?</p>
+
+<hr>
+
+<button id="signupBtn" class="btn-green">Create New Account</button>
+
 </div>
 
 </div>
+
+</div>
+
 </section>
 
 <!-- DASHBOARD -->
 <section id="app" class="hidden">
 
-<aside class="sidebar">
-<div class="brand">UltraPro</div>
-
-<nav>
-<button class="nav active" data-page="dashboard">Dashboard</button>
-<button class="nav" data-page="analytics">Analytics</button>
-</nav>
-
+<div class="navbar">
+<div class="logo">UltraPro</div>
 <button id="logoutBtn" class="logout">Logout</button>
-</aside>
-
-<main class="main">
-
-<div id="dashboard" class="page active">
-<h1>Dashboard</h1>
-<div class="card">
-<h3>System Status</h3>
-<p>All services operational</p>
-</div>
 </div>
 
-<div id="analytics" class="page">
-<h1>Analytics</h1>
-<div class="card">
-<canvas id="chart"></canvas>
+<div class="dashboard">
+<h2>Welcome Back</h2>
+<p>Your account is active.</p>
 </div>
-</div>
-
-</main>
 
 </section>
 
